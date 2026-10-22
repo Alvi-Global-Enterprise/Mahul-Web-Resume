@@ -50,7 +50,7 @@ export const TechStackSection: React.FC = () => {
   ];
 
   return (
-    <section id="tech-stack" className="relative w-full py-24 lg:py-28 bg-black overflow-hidden isolate">
+    <section id="tech-stack" className="relative w-full py-14 sm:py-16 lg:py-[72px] bg-black overflow-hidden isolate">
       {/* Background Cosmic Horizon Image from Figma */}
       <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden z-0">
         <img
@@ -66,7 +66,7 @@ export const TechStackSection: React.FC = () => {
 
       <div className="max-w-[1920px] mx-auto px-6 lg:px-16 w-full relative z-10">
         {/* Header row */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12 sm:mb-14 lg:mb-16">
           <div className="lg:col-span-8">
             <SectionHeader label="Technical Stack" color="#FF6B8B" />
             <h2 className="font-prosto text-[42px] sm:text-[52px] lg:text-[60px] leading-[1.05] text-white">

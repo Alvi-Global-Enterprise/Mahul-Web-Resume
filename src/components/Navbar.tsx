@@ -33,25 +33,25 @@ export const Navbar: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-black/80 backdrop-blur-md border-b border-white/10 py-3.5"
+          ? "bg-black/80 backdrop-blur-md  py-3.5"
           : "bg-transparent py-6"
       }`}
     >
-      <div className="max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-20 flex items-center justify-between">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-20 flex items-center justify-between gap-3 lg:gap-4">
         {/* Brand / Logo from public/images/logo.png */}
         <a
           href="#home"
-          className="flex items-center group cursor-pointer select-none"
+          className="flex items-center group cursor-pointer select-none shrink-0"
         >
           <img
             src="/images/logo.png"
             alt="DeMAR7 - Blockchain Advisory Firm"
-            className="h-[36px] sm:h-[42px] w-auto object-contain select-none transition-transform group-hover:scale-105"
+            className="h-[30px] sm:h-[36px] xl:h-[42px] w-auto object-contain select-none transition-transform group-hover:scale-105"
           />
         </a>
 
-        {/* Desktop Nav Links matching Figma (LINE Seed JP / 18px / Home in #EC0116, others white/30) */}
-        <nav className="hidden lg:flex items-center space-x-7 xl:space-x-10 text-[18px]">
+        {/* Desktop Nav Links matching Figma (fluid sizing: 13-14px on compact laptop, 16px on xl, 18px on 2xl) */}
+        <nav className="hidden lg:flex items-center space-x-3 xl:space-x-6 2xl:space-x-10 text-[13px] xl:text-[16px] 2xl:text-[18px] shrink-0">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
@@ -59,10 +59,10 @@ export const Navbar: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setActiveSection(link.id)}
-                className={`transition-colors duration-200 tracking-wide ${
+                className={`transition-colors duration-200 tracking-wide whitespace-nowrap ${
                   isActive
                     ? "text-[#EC0116] font-bold"
-                    : "text-white/35 hover:text-white font-normal"
+                    : "text-white/40 hover:text-white font-normal"
                 }`}
               >
                 {link.name}
@@ -72,18 +72,18 @@ export const Navbar: React.FC = () => {
         </nav>
 
         {/* Right CTA: Let's Talk Pill Button (#EC0116 pill + #B00010 circle + black arrow) */}
-        <div className="hidden sm:flex items-center">
+        <div className="hidden sm:flex items-center shrink-0">
           <a
             href="#contact"
-            className="h-[48px] px-0 pl-6 pr-[2px] rounded-full bg-[#EC0116] hover:bg-[#d60114] inline-flex items-center justify-between gap-4 group transition-all duration-300 shadow-[0_0_25px_rgba(236,1,22,0.35)] select-none"
+            className="h-[40px] sm:h-[44px] xl:h-[48px] px-0 pl-4 sm:pl-5 xl:pl-6 pr-[2px] rounded-full bg-[#EC0116] hover:bg-[#d60114] inline-flex items-center justify-between gap-2.5 sm:gap-3 xl:gap-4 group transition-all duration-300 shadow-[0_0_25px_rgba(236,1,22,0.35)] select-none shrink-0 whitespace-nowrap"
           >
-            <span className="font-bold text-[18px] text-black tracking-normal">
+            <span className="font-bold text-[13px] sm:text-[15px] xl:text-[18px] text-black tracking-normal whitespace-nowrap">
               Let’s Talk
             </span>
-            <div className="w-[44px] h-[44px] rounded-full bg-[#B00010] flex items-center justify-center text-black group-hover:rotate-45 transition-transform duration-300">
+            <div className="w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] xl:w-[44px] xl:h-[44px] rounded-full bg-[#B00010] flex items-center justify-center text-black group-hover:rotate-45 transition-transform duration-300 shrink-0">
               <svg
                 viewBox="0 0 24 24"
-                className="w-5 h-5 stroke-[2.5]"
+                className="w-4 h-4 sm:w-4.5 sm:h-4.5 xl:w-5 xl:h-5 stroke-[2.5]"
                 fill="none"
                 stroke="currentColor"
               >

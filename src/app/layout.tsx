@@ -29,6 +29,14 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mahul Ruparelia | Senior Product Manager & Quality Engineering",
   description: "Payments · FinTech · Web3 · AI Capital Markets · Quality Engineering. Delivering product visions through a quality engineering lens.",
+  icons: {
+    icon: [
+      { url: "/images/logo.png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({

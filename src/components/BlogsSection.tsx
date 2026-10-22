@@ -6,7 +6,7 @@ import { PillButton } from "./PillButton";
 
 export const BlogsSection: React.FC = () => {
   return (
-    <section id="blogs" className="relative w-full py-20 lg:py-24 bg-black overflow-hidden border-t border-white/10">
+    <section id="blogs" className="relative w-full py-14 sm:py-16 lg:py-[72px] bg-black overflow-hidden border-t border-white/10">
       {/* Red Ambient Glow */}
       <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[700px] h-[350px] bg-[#EC0116]/10 blur-[160px] pointer-events-none -z-10" />
 

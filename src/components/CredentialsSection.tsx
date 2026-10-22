@@ -33,7 +33,7 @@ export const CredentialsSection: React.FC = () => {
   ];
 
   return (
-    <section id="credentials" className="relative w-full py-24 lg:py-28 bg-black overflow-hidden isolate border-t border-b border-white/10">
+    <section id="credentials" className="relative w-full py-14 sm:py-16 lg:py-[72px] bg-black overflow-hidden isolate border-t border-b border-white/10">
       {/* Sunset Mountain Landscape Background from Figma */}
       <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden z-0">
         <img

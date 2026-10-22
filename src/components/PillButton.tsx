@@ -36,8 +36,8 @@ export const PillButton: React.FC<PillButtonProps> = ({
   size = "md",
 }) => {
   // Styles based on variant
-  let basePillClass = "relative inline-flex items-center justify-between rounded-full transition-all duration-300 group cursor-pointer select-none";
-  let contentClass = "font-questrial font-normal tracking-[0.05em] whitespace-nowrap pl-5 pr-2 flex items-center";
+  const basePillClass = "relative inline-flex items-center justify-between rounded-full transition-all duration-300 group cursor-pointer select-none";
+  const contentClass = "font-questrial font-normal tracking-[0.05em] whitespace-nowrap pl-5 pr-2 flex items-center";
 
   let defaultPillBg = "transparent";
   let defaultBorder = "border border-white/90 hover:border-white";
@@ -65,7 +65,7 @@ export const PillButton: React.FC<PillButtonProps> = ({
     <motion.div
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      className={`${basePillClass} ${heightClass} ${defaultBorder} ${className}`}
+      className={`${basePillClass} ${heightClass} ${defaultPillBg} ${defaultBorder} ${className}`}
       style={{
         backgroundColor: pillBgColor || undefined,
         borderColor: pillBorderColor || undefined,

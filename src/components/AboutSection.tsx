@@ -29,7 +29,7 @@ export const AboutSection: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="relative w-full py-20 lg:py-28 bg-black overflow-hidden isolate">
+    <section id="about" className="relative w-full py-14 sm:py-16 lg:py-[72px] bg-black overflow-hidden isolate">
       {/* Emerald Neon Aura Backdrop */}
       <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[650px] bg-[#36B878]/15 blur-[160px] pointer-events-none -z-10" />
 

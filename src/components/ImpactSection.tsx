@@ -27,20 +27,20 @@ export const ImpactSection: React.FC = () => {
       label: "Faster time-to-market",
     },
     {
-      value: ">95%",
+      value: "95%",
       highlight: false,
       label: "Sprint goal completion",
     },
   ];
 
   return (
-    <section className="relative w-full py-24 border-t border-white/10 overflow-hidden bg-black">
+    <section className="relative w-full py-14 sm:py-16 lg:py-[72px] border-t border-white/10 overflow-hidden bg-black">
       {/* Background radial gradient */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[300px] bg-gradient-to-r from-orange-600/10 via-amber-500/5 to-transparent blur-[120px] pointer-events-none" />
 
       <div className="max-w-[1920px] mx-auto px-6 lg:px-16 w-full">
         {/* Top Header Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12 sm:mb-14 lg:mb-16">
           <div className="lg:col-span-7">
             <SectionHeader label="Impact" color="#FF8A24" />
             <h2 className="font-prosto text-[38px] sm:text-[48px] lg:text-[59px] leading-[1.1] text-white">
@@ -65,14 +65,12 @@ export const ImpactSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.6 }}
-              className={`flex flex-col items-center text-center px-4 sm:px-6 ${
-                idx !== stats.length - 1 ? "lg:border-r lg:border-white/15" : ""
-              }`}
+              className={`flex flex-col items-center text-center px-4 sm:px-6 ${idx !== stats.length - 1 ? "lg:border-r lg:border-white/15" : ""
+                }`}
             >
               <div
-                className={`font-press-start text-[32px] sm:text-[38px] lg:text-[44px] leading-tight mb-4 tracking-tight ${
-                  stat.highlight ? "text-[#FF8A24]" : "text-white"
-                }`}
+                className={`font-press-start text-[32px] sm:text-[38px] lg:text-[44px] leading-tight mb-4 tracking-tight ${stat.highlight ? "text-[#FF8A24]" : "text-white"
+                  }`}
               >
                 {stat.value}
               </div>

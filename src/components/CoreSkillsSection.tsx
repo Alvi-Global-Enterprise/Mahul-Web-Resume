@@ -41,7 +41,7 @@ export const CoreSkillsSection: React.FC = () => {
   return (
     <section
       id="skills"
-      className="relative w-full bg-black py-16 lg:py-[72px] overflow-hidden isolate"
+      className="relative w-full bg-black py-14 sm:py-16 lg:py-[72px] overflow-hidden isolate"
     >
       {/* Background Mountain Panorama Asset from Figma (image 43 / Group 360.png) */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden z-0">

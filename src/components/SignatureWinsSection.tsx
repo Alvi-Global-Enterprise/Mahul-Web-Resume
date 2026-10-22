@@ -47,13 +47,13 @@ export const SignatureWinsSection: React.FC = () => {
   ];
 
   return (
-    <section id="work" className="relative w-full py-28 bg-black overflow-hidden">
+    <section id="work" className="relative w-full py-14 sm:py-16 lg:py-[72px] bg-black overflow-hidden">
       {/* Purple Ambient Aura */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-[#B78AFF]/15 via-transparent to-transparent blur-[140px] pointer-events-none -z-10" />
 
       <div className="max-w-[1920px] mx-auto px-6 lg:px-16 w-full">
         {/* Header row */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12 sm:mb-14 lg:mb-16">
           <div className="lg:col-span-8">
             <SectionHeader label="Signature Wins" color="#B78AFF" />
             <h2 className="font-prosto text-[40px] sm:text-[50px] lg:text-[56px] leading-[1.05] text-white">

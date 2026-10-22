@@ -30,7 +30,7 @@ export const ContactSection: React.FC = () => {
   ];
 
   return (
-    <section id="contact" className="relative w-full py-24 lg:py-32 bg-black overflow-hidden isolate border-t border-white/10">
+    <section id="contact" className="relative w-full py-14 sm:py-16 lg:py-[72px] bg-black overflow-hidden isolate border-t border-white/10">
       {/* Modern Skyscraper & Red Sun Skyline Background from Figma */}
       <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden z-0">
         <img
@@ -45,7 +45,7 @@ export const ContactSection: React.FC = () => {
       <div className="absolute bottom-0 right-1/4 w-[750px] h-[450px] bg-[#EC0116]/10 blur-[170px] pointer-events-none z-0" />
 
       <div className="max-w-[1920px] mx-auto px-6 lg:px-16 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
           {/* Left Column: Heading & Action Buttons */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -56,12 +56,12 @@ export const ContactSection: React.FC = () => {
           >
             <SectionHeader label="Contact" color="#EC0116" />
 
-            <h2 className="font-prosto text-[46px] sm:text-[56px] lg:text-[62px] leading-[1.05] text-white mb-6">
+            <h2 className="font-prosto text-[44px] sm:text-[54px] lg:text-[62px] leading-[1.05] text-white mb-5 sm:mb-6">
               Building something <br />
               <span className="text-[#EC0116]">complex?</span>
             </h2>
 
-            <p className="font-questrial text-[18px] sm:text-[22px] lg:text-[24px] text-white/80 max-w-[540px] mb-8 tracking-[0.05em]">
+            <p className="font-questrial text-[18px] sm:text-[22px] lg:text-[24px] text-white/80 max-w-[540px] mb-7 sm:mb-8 tracking-[0.04em]">
               Let’s turn the problem into a product worth shipping.
             </p>
 
@@ -91,23 +91,25 @@ export const ContactSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right Column: Contact Details with Red Icons from images */}
+          {/* Right Column: Contact Details aligned with Heading */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-5 flex flex-col justify-center space-y-6 lg:pl-10"
+            className="lg:col-span-5 flex flex-col justify-start lg:pt-9 space-y-6 sm:space-y-7 lg:pl-6 xl:pl-12"
           >
             {contactDetails.map((item, idx) => {
               const content = (
-                <div className="flex items-center space-x-5 group cursor-pointer">
-                  <img
-                    src={item.icon}
-                    alt=""
-                    className="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0 group-hover:scale-110 transition-transform select-none"
-                  />
-                  <span className="font-questrial text-[18px] sm:text-[21px] lg:text-[24px] text-white tracking-[0.04em] group-hover:text-red-400 transition-colors">
+                <div className="flex items-center space-x-4 sm:space-x-5 group cursor-pointer">
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center shrink-0">
+                    <img
+                      src={item.icon}
+                      alt=""
+                      className="w-6 h-6 sm:w-7 sm:h-7 object-contain shrink-0 group-hover:scale-110 transition-transform select-none"
+                    />
+                  </div>
+                  <span className="font-questrial text-[17px] sm:text-[20px] lg:text-[23px] text-white/90 tracking-[0.03em] group-hover:text-[#EC0116] transition-colors">
                     {item.label}
                   </span>
                 </div>
@@ -131,9 +133,6 @@ export const ContactSection: React.FC = () => {
             })}
           </motion.div>
         </div>
-
-        {/* Footer Bottom Bar */}
-        
       </div>
     </section>
   );

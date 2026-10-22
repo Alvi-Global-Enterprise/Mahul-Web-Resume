@@ -30,7 +30,7 @@ export const HowIWorkSection: React.FC = () => {
   ];
 
   return (
-    <section id="approach" className="relative w-full py-24 lg:py-28 bg-black overflow-hidden">
+    <section id="approach" className="relative w-full bg-black overflow-hidden">
       {/* Warm Golden Ambient Glow */}
       <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[700px] h-[500px] bg-[#E8C66A]/10 blur-[160px] pointer-events-none -z-10" />
 
@@ -114,7 +114,7 @@ export const HowIWorkSection: React.FC = () => {
 
               {/* Brushed Silver Quality Pixel Badge */}
               <div className="w-full py-3.5 px-6 rounded-[18px] bg-gradient-to-r from-[#7D7F84] via-[#D3D5D9] to-[#727479] border border-white/40 flex items-center justify-center shadow-[inset_0_1px_2px_rgba(255,255,255,0.6)]">
-                <span className="font-press-start text-[24px] sm:text-[28px] lg:text-[32px] text-black tracking-widest uppercase select-none">
+                <span className="font-press-start text-[24px] sm:text-[28px] lg:text-[32px] text-black tracking-widest uppercase">
                   QUALITY
                 </span>
               </div>
