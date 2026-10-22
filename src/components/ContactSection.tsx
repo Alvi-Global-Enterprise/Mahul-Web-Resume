@@ -133,12 +133,7 @@ export const ContactSection: React.FC = () => {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="mt-20 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-sm font-space-mono text-white/40 gap-4">
-          <p>© 2026 Mahul Ruparelia. All rights reserved.</p>
-          <p className="flex items-center gap-2">
-            <span>Built with Next.js, TypeScript & Tailwind CSS</span>
-          </p>
-        </div>
+        
       </div>
     </section>
   );
